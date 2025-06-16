@@ -244,6 +244,16 @@
         .computer-score {
             background: linear-gradient(to right, #3498db, #2980b9);
         }
+        
+        /* বিজ্ঞাপনের জন্য নতুন CSS */
+        .ad-container {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
         @media (max-width: 500px) {
             .container {
@@ -269,7 +279,6 @@
 </head>
 <body>
     <div class="container">
-        <!-- Home Screen -->
         <div id="home-screen" class="screen active">
             <div class="game-title">
                 <div class="logo">
@@ -296,7 +305,6 @@
             </button>
         </div>
 
-        <!-- Game Screen -->
         <div id="game-screen" class="screen">
             <h1>Tic Tac Toe</h1>
             
@@ -343,7 +351,20 @@
                 <i class="fas fa-home"></i> Back to Home
             </button>
         </div>
-    </div>
+
+        <div class="ad-container">
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : '07be476b5d0055746001163bb2491da6',
+                    'format' : 'iframe',
+                    'height' : 50,
+                    'width' : 320,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="//www.highperformanceformat.com/07be476b5d0055746001163bb2491da6/invoke.js"></script>
+        </div>
+        </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -540,4 +561,4 @@
         });
     </script>
 </body>
-</html>
+    </html>
